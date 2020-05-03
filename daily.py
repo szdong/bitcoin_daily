@@ -71,5 +71,5 @@ def lambda_handler(event, context):
     line_notify(text_1 + text_2 + text_3 + text_4)
 
 
-if __name__ == '__main__':
-    lambda_handler(None, None)
+# if __name__ == '__main__':
+#     lambda_handler(None, None)
