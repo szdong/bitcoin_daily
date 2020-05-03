@@ -56,7 +56,6 @@ def lambda_handler(event, context):
     # except Exception as e:
     #     line_notify(str(e))
 
-    btc_price = float(binance.fetch_ticker('BTC/USDT')["last"])
     usdt_balance = binance.fetch_balance()["USDT"]["free"]
     btc_balance = binance.fetch_balance()["BTC"]["free"]
     avg_cost = round((1000 - usdt_balance) / btc_balance, 3)
